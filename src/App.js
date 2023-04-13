@@ -1,9 +1,11 @@
+import {WeatherProvider} from './context/WeatherContext'
+import Container from "./components/Container";
 
 function App() {
   return (
-    <div className="App">
-      hello!
-    </div>
+    <WeatherProvider>
+      <Container/>
+    </WeatherProvider>
   );
 }
 
