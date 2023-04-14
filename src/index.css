@@ -13,21 +13,29 @@ code {
 }
 
 .app {
+  position: absolute;
   width: 100%;
+  margin: 0;
   height: 100vh;
-  position: relative;
   color: white;
-  background: url('./assets/4217941.jpg') no-repeat center center/cover;
+  background: url('./assets/4217941.jpg') no-repeat center ;
+  background-size: cover;
 }
+
+
 .container {
-  
-  margin: auto;
-  width: 70%;
-  height: 70vh;
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  
+background-color: rgb(255, 255, 255);
+max-width: 70%;
+margin: auto;
+margin-top: 100px;
+padding: 20px 10px;
+border-radius: 10px;
+box-shadow: 0 1.2em 2.4em rgba(111, 87, 8, 0.25);
+top: 50%;
+left: 50%;
+
 }
+
 
 .header {
   display: flex;
@@ -37,11 +45,106 @@ code {
 }
 .header-title {
   margin-top: 2em;
-  color: rgba(251, 185, 30, 0.61);
+  color: rgba(226, 184, 86, 0.61);
   font-weight: bold;
   font-size: 40px;
   border-bottom: 1rem solid;
  
 }
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+select {
+  font-size: 16px;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  appearance: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+button {
+  font-size: 16px;
+  padding: 8px 12px;
+  border: 2px solid;
+  border-radius: 4px 4px  solid #000000;
+  background-color: #317fa4ed;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #317fa4ed;
+  border-color: #317fa4ed;
+  
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  border-radius: 10px;
+  background-color: rgba(81, 116, 102, 0.472);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.weather-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #b693c66e;
+}
+
+.selected-city {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.date {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.temp {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 100px;
+  margin-top: 10px;
+}
+
 
 

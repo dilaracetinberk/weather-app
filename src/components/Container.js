@@ -1,14 +1,14 @@
 import React from 'react';
-import CardInfo from './CardInfo';
-import Form from './Form';
+import Card from './WeatherCard';
+import Location from './Form';
 import Header from './Header';
 
 function Container() {
   return (
     <div className='container'>
       <Header/>
-      <CardInfo/>
-      <Form/>
+      <Location/>
+      <Card/>
     </div>
   )
 }
