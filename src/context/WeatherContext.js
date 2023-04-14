@@ -25,7 +25,7 @@ export const WeatherProvider = ({children}) => {
             const dailyWeatherData = res.data.list.filter((data, index) => index % 7 === 0);
             setInfo(dailyWeatherData);
           })
-          .catch(() => alert("Looks like something wrong"))
+          .catch(() => console.log("Looks like something wrong"))
         
     }
     },[city])
